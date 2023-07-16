@@ -45,10 +45,14 @@
 <div class="container">
 <div class="row justify-content-center">
   <div class="col-lg-6">
-    <form action="#" class="p-5 bg-white">
-      <div class="form-group">
+    <form action="account/login.php" method="post" class="p-5 bg-white">
+      <h2>LOGIN</h2>
+     	<?php if (isset($_GET['error'])) { ?>
+     		<p class="error"><?php echo $_GET['error']; ?></p>
+     	<?php } ?>
+    <div class="form-group">
         <label for="username">Username</label>
-        <input type="text" class="form-control" id="username" placeholder="Enter your username">
+        <input type="text" class="form-control" id="uname" placeholder="Enter your username">
       </div>
       <div class="form-group">
         <label for="email">Email</label>
@@ -66,7 +70,7 @@
         <button type="submit" class="btn btn-primary">Register</button>
       </div>
       <div class="form-group">
-        <p>Already Have Account? <a href="#">Sign In</a></p>
+        <p>Don't Have Account? <a href="account/signup.php">Create an account</a></p>
       </div>
     </form>
   </div>

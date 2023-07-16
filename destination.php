@@ -34,7 +34,6 @@
         <li class="nav-item  active"><a href="destination.php" class="nav-link">Destination</a></li>
         <li class="nav-item"><a href="item_for_travellers.html" class="nav-link">Item For Travellers</a></li>
         <li class="nav-item"><a href="trips.php" class="nav-link">Trip Planning</a></li>
-        <li class="nav-item"><a href="register.php" class="nav-link">Account</a></li>
       </ul>
     </div>
   </div>
@@ -96,7 +95,7 @@
   $unmae= "root";
   $password = "";
 
-  $db_name = "visitjaybeee";
+  $db_name = "travelplanner";
 
 $conn = mysqli_connect($sname, $unmae, $password, $db_name);
   if ($conn->connect_error) {
